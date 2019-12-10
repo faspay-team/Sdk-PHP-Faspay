@@ -1,0 +1,14 @@
+{
+    "name": "vendor/faspay-s-d-k",
+    "description": "Description of project FaspaySDK.",
+    "authors": [
+        {
+            "name": "hilmananwarsah",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "karriere/json-decoder": "dev-master",
+        "sabre/xml": "^2.1"
+    }
+}
