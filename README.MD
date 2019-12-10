@@ -34,15 +34,13 @@ class test_user extends faspay_user{
 you can switch between dev/prod
 ```php
 $config = new configs_dev($user);
-//
-$config = new configs_prod($user);
+//$config = new configs_prod($user);
 ```
 
 you can switch between dev/prod
 ```php
 $config = new configs_dev($user);
-//
-$config = new configs_prod($user);
+//$config = new configs_prod($user);
 ```
 
 
