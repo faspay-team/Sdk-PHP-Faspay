@@ -15,16 +15,16 @@ require_once 'FaspayConfigCredit.php';
 class FaspayConfigCreditDev extends FaspayConfigCredit{
     
     public function getMerchantDirectUrl() {
-        return "https://fpgdev.faspay.co.id/payment";
+        return "https://fpg-sandbox.faspay.co.id/payment";
         
     }
 
     public function getMerchantInquiryUrl() {
-        return "https://fpgdev.faspay.co.id/payment/api";
+        return "https://fpg-sandbox.faspay.co.id/payment/api";
     }
 
     public function getMerchantWindowUrl() {
-        return "https://fpgdev.faspay.co.id/payment";
+        return "https://fpg-sandbox.faspay.co.id/payment";
     }
 
 }
