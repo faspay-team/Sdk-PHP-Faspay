@@ -82,6 +82,7 @@ class FaspayPaymentRequestWrapper extends FaspayPaymentRequest implements JsonSe
         parent::setItem($billing->getItem());
         parent::setReserve1("");
         parent::setReserve2("");
+        parent::setTrxsource();
         parent::setRequest("");
         parent::setPay_type($billing->getPay_type());
         parent::setSignature(sha1(md5($config->getUser()->getUserId() . $config->getUser()->getPassword() . $this->getBill_no())));

@@ -57,6 +57,7 @@ class FaspayPaymentRequest implements JsonSerializable {
     private $item;
     private $reserve1;
     private $reserve2;
+    private $trx_source;
     private $signature;
 
     function getRequest() {
@@ -232,6 +233,10 @@ class FaspayPaymentRequest implements JsonSerializable {
         return $this->reserve2;
     }
 
+    function getTrxsource() {
+        return $this->trx_source;
+    }
+
     function getSignature() {
         return $this->signature;
     }
@@ -402,6 +407,10 @@ class FaspayPaymentRequest implements JsonSerializable {
 
     function setReserve2($reserve2) {
         $this->reserve2 = $reserve2;
+    }
+
+    function setTrxsource() {
+        $this->trx_source = 'PHP SDK';
     }
 
     function setSignature($signature) {
